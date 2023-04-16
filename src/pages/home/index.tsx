@@ -1,6 +1,7 @@
-import Forms from "../../components/forms"
+import Forms  from "../../components/Post"
 import { color } from "../../utils/color"
 import { Main, Titulo } from "./style"
+
 export default function Home (){
     return (
         <Main>
