@@ -7,3 +7,7 @@ flex-direction: column;
 align-items: center;
 background: linear-gradient(red, blue);
 `
+
+export const Titulo = styled.h1`
+
+`
