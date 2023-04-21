@@ -1,20 +1,13 @@
-import { useState } from "react"
 import { SaveUser } from "../../components/SaveUser"
 import { color } from "../../utils/color"
 import { Main, Titulo } from "./style"
 
-export default function Home (){
-    const [list, setList] = useState([])
+export default function Home() {
 
-    function handleSaveUser({user}:any) {
-        let newList = [...list]
-        setList(newList)
-    }
     return (
         <Main>
-            <Titulo style={{color:`${color.ciano}`}}>What To Do</Titulo>
-            <SaveUser onAddUser={handleSaveUser}/>
-            
+            <Titulo style={{ color: `${color.ciano}` }}>What To Do</Titulo>
+            <SaveUser />
         </Main>
     )
 }
