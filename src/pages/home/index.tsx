@@ -8,14 +8,13 @@ export default function Home (){
 
     function handleSaveUser({user}:any) {
         let newList = [...list]
-        newList.push(user)        
         setList(newList)
     }
     return (
         <Main>
             <Titulo style={{color:`${color.ciano}`}}>What To Do</Titulo>
             <SaveUser onAddUser={handleSaveUser}/>
-
+            
         </Main>
     )
 }
